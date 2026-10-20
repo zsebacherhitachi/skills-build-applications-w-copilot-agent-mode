@@ -78,6 +78,7 @@ describe('OctoFit API contract', () => {
       { teamName: 'Octocats', totalPoints: 25, rank: 2 },
     ]);
   });
+  
   it('suggests workouts that match each user activity pattern', async () => {
     const mona = await createUserAndTeam('Mona', 'mona@example.com', 'Mona', 'Octocats');
     const hubot = await createUserAndTeam('Hubot', 'hubot@example.com', 'Hubot', 'Robocats');
