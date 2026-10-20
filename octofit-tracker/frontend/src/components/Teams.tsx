@@ -38,7 +38,7 @@ export default function Teams() {
       error={error}
       emptyText="No teams available."
       items={teams}
-      renderItem={(team) => `${team.name ?? 'Team'} (${(team.members ?? []).map((member) => String(member)).join(', ') || 'no members'})`}
+      renderItem={(team: TeamRecord) => `${team.name ?? 'Team'} (${(team.members ?? []).map((member) => String(member)).join(', ') || 'no members'})`}
     />
   );
 }
